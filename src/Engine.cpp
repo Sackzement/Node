@@ -30,7 +30,7 @@ deltaTime (m_deltaTime),
       fps (m_fps),
 
 
-gameObjects ()
+objects ()
 {}
 
 

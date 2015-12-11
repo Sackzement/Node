@@ -1,25 +1,14 @@
 
 #include <Ngin/Ngin.h>
 
-SDL_Window* window;
-bool quit = false;
-
-void input();
-void update();
-void render();
-
 int main(int argc, char** argv)
 {
-	SDL_Init(SDL_INIT_EVERYTHING);
 
-	window = SDL_CreateWindow("Node", 100, 100, 800, 600, SDL_WINDOW_SHOWN);
+	ngin.initLibs();
 
-	while (!quit)
-	{
-		input();
-		update();
-		render();
-	}
+	ngin.createWindowAndRenderer("Node", 100, 100, 800, 600, SDL_WINDOW_SHOWN, SDL_RENDERER_ACCELERATED);
+
+	ngin.enterMainLoop();
 
 	return 0;
 }

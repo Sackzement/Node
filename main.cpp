@@ -1,5 +1,5 @@
 
-#include <SDL\SDL.h>
+#include <Ngin/Ngin.h>
 
 SDL_Window* window;
 bool quit = false;

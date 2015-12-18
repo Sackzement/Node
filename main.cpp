@@ -21,8 +21,13 @@ class Controls : public Object
 
 
 		if (ngin.isKeyDownOnce(SDLK_c))
-			// create rect
-			//SDL_SetWindowFullscreen(ngin.getWindow(), SDL_WINDOW_FULLSCREEN_DESKTOP);
+		{
+			Rect* rect = new Rect();
+			rect->color = {255,0,0,255};
+			rect->size.x = 200;
+			rect->size.y = 200;
+			ngin.addObject(rect);
+		}
 
 	}
 };

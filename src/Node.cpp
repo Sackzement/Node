@@ -37,16 +37,14 @@
 	}
 };*/
 
-struct
-{
-	//int(*ren) (SDL_Renderer*, int, int, int, int) = SDL_RenderDrawLine;
-};
+
+
 
 int startGame(int argc, char** argv)
 {
 	lib.init();
 	window.create();
-	renderer.create();
+	renderer.create(
 
 	window.setFullscreen();
 

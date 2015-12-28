@@ -1,6 +1,5 @@
-#pragma once
 
-#include "include\Node.h"
+#include "include/Node.h"
 
 
 int main(int argc, char** argv)

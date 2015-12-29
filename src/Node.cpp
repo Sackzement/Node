@@ -5,7 +5,7 @@
 #include <Ngin/window.h>
 #include <Ngin/renderer.h>
 #include <Ngin/textures.h>
-#include <iostream>
+#include <SDL/SDL_log.h>
 
 
 /*class Controls : public Object
@@ -45,12 +45,18 @@ int startGame(int argc, char** argv)
 	lib.init();
 	window.create();
 	renderer.create();
+	
 
 	//window.setFullscreen();
 
 	//Controls* ctrl = new Controls();
 	//ngin.addObject(ctrl);
 	textures.loadTexture("res/cat.png");
+	textures.loadTexture("res/aaa.png");
+
+	
+	for (auto it = textures.list.begin(); it != textures.list.end(); ++it)
+		SDL_Log("%s ->  %s  %i %i  %x", (*it).first, (*it).second.name, (*it).second.width, (*it).second.height, (*it).second.texturePtr);
 	//ngin.enterMainLoop();
 
 	getchar();

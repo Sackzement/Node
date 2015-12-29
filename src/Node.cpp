@@ -4,6 +4,7 @@
 #include <Ngin/lib.h>
 #include <Ngin/window.h>
 #include <Ngin/renderer.h>
+#include <Ngin/textures.h>
 #include <iostream>
 
 
@@ -39,27 +40,26 @@
 
 
 
-
 int startGame(int argc, char** argv)
 {
 	lib.init();
 	window.create();
-	renderer.create(
+	renderer.create();
 
-	window.setFullscreen();
+	//window.setFullscreen();
 
 	//Controls* ctrl = new Controls();
 	//ngin.addObject(ctrl);
-
+	textures.loadTexture("res/cat.png");
 	//ngin.enterMainLoop();
 
-	//getchar();
+	getchar();
 	
 	window.destroy();
 	renderer.destroy();
 	lib.quit();
 	
-	//getchar();
+	getchar();
 
 	return 0;
 }

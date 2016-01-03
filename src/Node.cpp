@@ -39,10 +39,10 @@
 };*/
 
 
-
+/*
 int startGame(int argc, char** argv)
 {
-	lib.init();
+	initLibs();
 	window.create();
 	renderer.create();
 	
@@ -63,9 +63,9 @@ int startGame(int argc, char** argv)
 	
 	window.destroy();
 	renderer.destroy();
-	lib.quit();
+	quitLibs();
 	
 	getchar();
 
 	return 0;
-}
+}*/

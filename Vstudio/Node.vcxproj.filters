@@ -24,5 +24,11 @@
     <ClInclude Include="..\include\Node.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\test.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SCB.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

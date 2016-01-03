@@ -167,6 +167,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Node.h" />
+    <ClInclude Include="..\include\SCB.h" />
+    <ClInclude Include="..\include\test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
